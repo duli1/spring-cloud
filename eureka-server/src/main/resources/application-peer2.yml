@@ -1,0 +1,13 @@
+server:
+  port: 10002
+
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url:
+      defaultZone: http://peer3:10003/eureka/,http://peer1:10001/eureka/
+spring:
+  application:
+    name: euaeka-server
